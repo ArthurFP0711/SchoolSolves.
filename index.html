@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolSolves</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="body">
+    <header>
+        <div class="title">
+            <h1><strong id="schl">School</strong>Solves</h1></div>
+        <nav class="navigation">
+            <ul class="ul">
+              <li id="ul-li"><a href="#body">Home</a></li>            
+              <li id="ul-li"><a href="#Eq-article">Equação</a></li>
+              <li id="ul-li"><a href="#Fr-article">Força resultante</a></li>
+              
+            </ul>
+            
+        </nav>
+        <div >
+                <input type="search" class="search" value="Search" >
+            </div>
+    </header>
+    <main id="sec1">
+        <div class="span">
+            <h1 class="span-title">Welcome to School<strong id="schl">Solves</strong></h1>
+            <p class="span-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur adipisci autem ut impedit repellendus, accusamus voluptatum vitae quasi corrupti voluptate quaerat ad sapiente, placeat, fuga unde asperiores? Voluptatum, rem odit.<p>
+                   
+            <div class="form">
+                <p class="p-form">Entre em sua conta</p>
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password"> <br>
+                <input type="submit" id="login">
+            </div>
+        </div>
+
+        <div class="span-img-box">
+            <img class="span-img" src="./imgs/undraw_exams_re_4ios.svg" alt="">
+        </div>
+    </main>
+    <article id="Eq-article">
+        <div class="about-eq">
+            <h1 class="about-eq-title">
+                Equação do segundo grau
+            </h1>
+            <p class="about-eq-p">
+                Em matemática, uma equação quadrática ou equação do segundo grau é uma equação polinomial de grau dois. A forma geral deste tipo de equação é: y:= f(x) = ax^{2}+bx+c=0, em que x é uma variável, sendo a, b e c constantes, com a ≠ 0.
+            </p>
+        </div>
+        <div class="Eq-container">
+            <h1 class="Eq-title">Calculadora de Equação</h1>
+            <p class="Eq-p">Digite os coeficientes</p>
+            <div class="coeficientes">
+                <input type="number" placeholder="a" name="a" id="coef-a">
+                <input type="number" placeholder="b" name="b" id="coef-b">
+                <input type="number" placeholder="c" name="c" id="coef-c">
+            </div>
+            <div class="guide">
+            <p id="delt">&Delta; = b²-4*a*c</p>
+            <p id="x'">x' = -b + 
+             (&radic; b²-4ac) / 2 * a <p>
+            <p id="x''">x'' = -b -
+                (&radic; b²-4ac) / 2 * a <p>
+            </div>
+            <button class="EqSolve" onclick="CalcEq()">Calculate</button>
+        </div>
+    </article>
+    <article id="Fr-article">
+        <div class="about-Fr">
+            <h1 class="about-Fr-title">
+                Força resultante
+            </h1>
+            <p class="about-Fr-p">
+                A segunda lei de Newton, também conhecida como princípio fundamental da dinâmica, afirma que a força resultante que atua sobre um corpo é igual ao produto de sua massa pela aceleração. (Fr = m*a) || (m = Fr / a) || (a = Fr / m)
+            </p></div>
+            <div class="Fr-container">
+                <h1 class="Fr-title">Calculadora - força resultante</h1>
+                <p class="fr-p" id="fr-p">Digite as informações que tiver para descobrir a que falta</p>
+                <div class="fma">
+                    <div class="infos"><input type="number" name="" id="força" placeholder="Força(N)"> =
+                    <input type="number" name="" id="massa" placeholder="massa(Kg)">  x
+                    <input type="number" name="" id="aceleration" placeholder="aceleração(m/s²)"></div>
+                    <input type="submit" value="Calcular" class="Fr-submit" onclick="CalcFr()">
+                        <p id="Fr-res">=</p>
+                      
+            </div>
+    </article>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
